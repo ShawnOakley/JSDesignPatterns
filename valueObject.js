@@ -31,7 +31,7 @@ Grade.prototype = _.extend( Grade.prototype, {
   passingGradeLetters: function() {
     return _.chain( this.grades ).where({ passing: true }).pluck('letter').value();
   },
- 
+ http://journal.crushlovely.com/post/88286828068/7-patterns-to-refactor-javascript-applications-value
   grade: function( percentage ) {
     return _.find( this.grades, function( grade ) { return percentage >= grade.minimumPercentage; });
   },
